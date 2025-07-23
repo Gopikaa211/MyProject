@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Application Form</title>
+</head>
+<body bgcolor="#f2f6ff">
+
+    <h2 style="color: #003366; text-align: center;">Student Application Form</h2>
+
+    <form style="margin-left: 50px;">
+        <table cellspacing="10">
+            <tr>
+                <td><label for="name">Full Name:</label></td>
+                <td><input type="text" id="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" required></td>
+            </tr>
+            
+            <tr>
+                <td><label for="course">Course:</label></td>
+                <td><input type="text" id="course" required></td>
+            </tr>
+            <tr>
+                <td><label for="year">Year of Study:</label></td>
+                <td>
+                    <select id="year" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="1">1st Year</option>
+                        <option value="2">2nd Year</option>
+                        <option value="3">3rd Year</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="achievements">Achievements:</label></td>
+                <td><textarea id="achievements" rows="4" cols="40" placeholder="Mention any academic, cultural or technical achievements"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="markscard">Upload Marks Card:</label></td>
+                <td><input type="file" id="markscard" accept=".pdf, .jpg, .jpeg, .png"></td>
+            </tr>
+            <tr>
+                <td><label for="message">Why should we select you?</label></td>
+                <td><textarea id="message" rows="4" cols="40" placeholder="Write briefly" required></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit Application" style="background-color: #003366; color: white; padding: 10px 20px; border: none; cursor: pointer;">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

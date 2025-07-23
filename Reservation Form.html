@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Reservation Form</title>
+</head>
+<body bgcolor="DarkGrey">
+
+  <h1 style="color: #003366; text-align: center;">Hotel Reservation Form</h1>
+
+  <form action="/submit-reservation" method="post" style="margin-left: 50px;">
+    <table cellspacing="10">
+      <tr>
+        <td><label for="fullname">Full Name:</label></td>
+        <td><input type="text" id="fullname" name="fullname" required></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email Address:</label></td>
+        <td><input type="email" id="email" name="email" required></td>
+      </tr>
+      <tr>
+        <td><label for="phone">Phone Number:</label></td>
+        <td><input type="tel" id="phone" name="phone"></td>
+      </tr>
+      <tr>
+        <td><label for="checkin">Check-in Date:</label></td>
+        <td><input type="date" id="checkin" name="checkin" required></td>
+      </tr>
+      <tr>
+        <td><label for="checkout">Check-out Date:</label></td>
+        <td><input type="date" id="checkout" name="checkout" required></td>
+      </tr>
+      <tr>
+        <td><label for="guests">Number of Guests:</label></td>
+        <td><input type="number" id="guests" name="guests" min="1" required></td>
+      </tr>
+      <tr>
+        <td><label for="roomtype">Room Type:</label></td>
+        <td>
+          <select id="roomtype" name="roomtype">
+            <option value="single">Single</option>
+            <option value="double">Double</option>
+            <option value="suite">Suite</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="requests">Special Requests:</label></td>
+        <td><textarea id="requests" name="requests" rows="4" cols="30"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center;">
+          <input type="submit" value="Book Now">
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>
